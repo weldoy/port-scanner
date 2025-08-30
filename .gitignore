@@ -1,0 +1,29 @@
+# Виртуальное окружение
+venv/
+ENV/
+env/
+
+# Python кэш
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Логи
+*.log
+
+# Файлы среды IDE
+.vscode/
+.idea/
+
+# Файлы системы
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Пакеты
+*.egg
+*.egg-info/
+dist/
+build/
