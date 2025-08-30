@@ -2,7 +2,7 @@ import socket
 import time
 
 target_host = input("Введите хост (например, www.example.com): ")
-ports = [21, 22, 23, 25, 53, 80, 110, 143, 443, 3306]
+ports = [21, 22, 23, 25, 53, 80, 110, 143, 443, 3306, 3389]
 
 print(f"Сканирую {target_host}...\n")
 time.sleep(2)
