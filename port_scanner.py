@@ -16,7 +16,7 @@ for port in ports:
     elif answer == 10061:
         print(f"Порт {port} на хосте {target_host} закрыт.")
     else:
-        print(f"Ошибка подключения к {target_host}:{port}. Код ошибки: {answer}")
+        print(f"Ошибка подключения к {target_host}:{port}. Код ошибки: {answer} ")
 
     sck.close()
 

